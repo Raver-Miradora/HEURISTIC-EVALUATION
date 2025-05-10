@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HCI2-FinalTermProject</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+<body>
+     <!--Navigation Bar-->
+     <nav class="navbar navbar-expand-lg bg-dark" id="mainNav" data-bs-theme="dark"> 
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Heuristic Evaluation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="decide.html">DECIDE Framework</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="evaluationResult.html">Evaluation Result</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="proposedImprovements.html">Proposed Improvements</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   <div class="container my-5">
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-primary text-white text-center"> 
+            <h4>Evaluation Results Overview</h4>
+        </div>
+        <div class="card-body">
+            <p class="mb-0">
+                This heuristic evaluation was conducted by a team of IT undergraduate evaluators to assess the usability of the Computer Laboratory Management System. 
+                Applying Jakob Nielsen's 10 Usability Heuristics, we systematically identified interface challenges and improvement opportunities across core functionalities including equipment borrowing, 
+                inventory tracking, and user management. The assessment focused on optimizing efficiency and reliability for primary users - lab administrators handling daily operations and staff members borrowing resources. 
+                Our findings aim to enhance both the technical performance and user experience of the system, ensuring it effectively supports the institution's resource management needs while maintaining intuitive operation for all user levels.
+            </p>
+
+            <hr class="my-4 border-secondary">
+            <div class="mb-4 text-center">
+                <img src="Images/I1.PNG" class="img-thumbnail w-50 hover-scale" alt="Login transition screenshot">
+            </div>
+
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">1</span> Visibility of System Status</h5>
+                <div class="ps-4">
+                    <h6 class="mt-3 text-danger">Issues:</h6>
+                    <p class="mb-0">
+                        After login, the system displays a loading animation, but it plays too quickly (less than 1 second) and instantly transitions to the dashboard. Users may miss the feedback, creating uncertainty about whether their login was successful. Also, no persistent indicator like success message confirms the action.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Ensure the login loading animation lasts at least 2–3 seconds and pair it with a clear success message before redirecting. Persistent visual feedback, like a welcome banner, should reinforce the action. Avoid instant transitions to prevent user uncertainty and enhance trust in the system.
+                </p>
+            </div>
+
+            <hr class="my-4 border-primary opacity-25">
+        </div>
+
+        <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I2.PNG" class="img-thumbnail w-50 hover-scale" alt="Dashboard greeting screenshot">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">2</span> Match Between System and the Real World</h5>
+                <div class="ps-4">
+                    <h6 class="mt-3 text-danger">Issues:</h6>
+                    <p class="mb-0">
+                        The dashboard displays "Welcome, Administrator Admin!". A repetitive greeting that mismatches real-world. This unnatural phrasing fails to reflect real-world communication norms, potentially confusing users. Additionally, the redundant use of "Administrator Admin" appears unprofessional and may undermine user trust in the system's attention to detail.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    To improve usability, the greeting should adopt natural language, such as "Welcome, [First Name]!" or "Hello, [Role/Name]!". This change would align with real-world conventions, enhance clarity, and personalize the user experience. Ensuring distinct, role-specific greetings would also maintain professionalism while making the interface more intuitive.
+                </p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I3.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">3</span> User Control and Freedom</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system confirms actions such as deletions but lacks undo/redo functionality. Users cannot recover accidentally deleted items without tedious steps. This violates the heuristics #3 since users must "go backward" manually, increasing frustration and effort for reversible actions.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    To improve user control and freedom, the system should implement an "Undo" option and introduce a recycle bin/archive system for recoverable items. Additionally, keyboard shortcuts (Ctrl+Z/Y) should be supported for quick reversals.
+                </p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I4.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">4</span> Consistency and Standards</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The dashboard uses the same icon for both Categories and Pending Borrowed sections, creating confusion since icons should represent distinct functions. Additionally, deletion pop-ups lack standard red buttons for destructive actions, violating consistency. 
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    To improve consistency, use distinct icons and standard red buttons for deletions. Follow platform conventions for colors and layouts. Add tooltips to clarify icons.
+                </p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I5.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">5</span> Error Prevention</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system displays effective error messages but relies too heavily on corrections after mistakes occur. It lacks proactive safeguards like confirmation prompts for high-risk transactions, and input constraints for fields like dates. This reactive approach forces users to fix preventable errors, increasing frustration.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Implement auto-formatting for account/phone numbers, add confirmation dialogs for large transfers, and use input masks for fields like dates. Disable submission until all fields are valid and highlight discrepancies in real-time.
+                </p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I6.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">6</span> Recognition rather than Recall</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system uses dropdowns for selections but lacks breadcrumbs, forcing users to recall their navigation path instead of recognizing it visually. This violates Heuristic #6 by relying on memory over visible cues, increasing cognitive load and potential errors during multi-step processes. Users must remember their journey rather than seeing it displayed.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    The system should add breadcrumbs to show navigation paths and maintain recently selected dropdown items at the top. Include clear labels, autocomplete suggestions, and visual history cues.
+                </p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I7.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">7</span> Flexibility and Efficiency of use</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system lacks keyboard shortcuts for faster navigation and allows limited personalization (logo/name changes) but doesn't let users customize functionalities like dashboard layouts or workflow preferences. This reduces efficiency for power users who rely on accelerators or tailored interfaces.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Add keyboard shortcuts and customizable workflows to boost efficiency. Enable personalized dashboards and saved templates while maintaining simplicity. These accelerators will serve both novice and expert users without complicating the interface</p>
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I8.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">8</span> Aesthetic and Minimalist Design</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system already maintains a clean interface by prioritizing essential content and removing unnecessary elements. However, excessive minimalism risks hiding useful features—users may overlook advanced functions if the design becomes overly sparse or lacks visual hierarchy.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Balance minimalism with discoverability: use subtle visual cues (e.g., icons, micro-interactions) to guide users to advanced features without clutter. Maintain whitespace but ensure critical actions remain immediately apparent through strategic contrast or progressive disclosure techniques.
+                </p> 
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I5.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">9</span> Help Users Recognize, Diagnose, and Recover from Errors</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system displays errors using only red text without clear solutions, leaving users confused about how to fix problems. Generic messages like "Invalid input" fail to explain causes or corrective actions, increasing frustration during task completion.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Replace generic errors with actionable messages (e.g., "Password must contain 8 characters").  Add inline corrections (e.g., auto-formatting) and a "Help" button linking to specific resolution steps when errors occur.
+                </p> 
+            </div>
+            <hr class="my-4 border-primary opacity-25">
+            </div>
+
+            <div class="card-body">
+            <div class="mb-4 text-center">
+                <img src="Images/I10.PNG" class="img-thumbnail w-50 hover-scale">
+            </div>
+        
+            <div class="mb-3">
+                <h5><span class="badge bg-primary me-2">10</span> Help and Documentation</h5>
+                <div class="ps-4">
+                <h6 class="mt-3 text-danger">Issues:</h6>
+                <p class="mb-0">
+                    The system lacks essential help documentation and in-app guidance, forcing users to rely on trial-and-error or external support. This violates Heuristic #10, creating frustration when users encounter unfamiliar features or errors without accessible reference material.
+                </p>
+                </div>
+            </div>
+        
+            <div class="ps-4">
+                <h6 class="text-success">Recommendations:</h6>
+                <p class="mb-0">
+                    Implement contextual tooltips, a searchable knowledge base, and step-by-step guides within the interface. Ensure documentation is easily accessible without leaving the system, with clear troubleshooting sections for common issues. Prioritize user-friendly, just-in-time assistance.
+                </p> 
+            </div>
+            </div>
+        </div>
+
+        
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5>List of tasks used during evaluation</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled ps-3 mb-0">
+                        <li class="mb-2">• Log in using valid credentials and verify successful dashboard access</li>
+                        <li class="mb-2">• Add a new category (e.g., "Keyboard") and confirm it appears in the category list</li>
+                        <li class="mb-2">• Register a new item under an existing category, providing all required details</li>
+                        <li class="mb-2">• Process a borrow request by selecting an available item and assigning it to a user</li>
+                        <li class="mb-2">• Report item damage, documenting the issue and updating its status in the system</li>
+                        <li class="mb-2">• Create a new staff account with appropriate permissions and test login capability</li>
+                        <li class="mb-2">• Update system settings, such as system name, and verify changes apply</li>
+                        <li>• Edit account profile (e.g., change password) and confirm updates save correctly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5>Conclusion of the Evaluation</h5>
+                </div>
+                <div class="card-body">
+                    <p class="mb-3">
+                        The heuristic evaluation revealed several usability challenges across the Computer Management System, primarily concerning feedback clarity, intuitive design, and user control. Key findings indicate inconsistencies in visual cues, insufficient error prevention measures, and limited user guidance, which collectively hinder the user experience.
+                    </p>
+                    <p class="mb-3">
+                        The system would benefit from enhanced feedback mechanisms, such as clearer success indicators and actionable error messages, along with improved navigation aids like breadcrumbs and distinct icons. Implementing undo functionality, customizable workflows, and contextual help documentation would further empower users and streamline interactions.
+                    </p>
+                    <p class="mb-0">
+                        To address these issues, we recommend prioritizing intuitive design updates, including standardized visual elements and proactive safeguards, while maintaining a balance between minimalism and functionality. These enhancements will create a more efficient, user-friendly experience for both novice and expert users.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white text-center">
+                <h5>Compiled Heuristic Evaluation Workbook</h5>
+            </div>
+            <div class="card-body">
+                <!-- Mobile-responsive PDF container with fallback -->
+                <div class="pdf-container border rounded mb-3" style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden;">
+                    <object data="Heuristic_Evaluation_Workbook_Compiled.pdf#view=FitH" 
+                            type="application/pdf" 
+                            width="100%" 
+                            height="100%" 
+                            style="position: absolute; top: 0; left: 0;"
+                            aria-label="PDF document: Heuristic Evaluation Workbook">
+                        <div class="alert alert-warning p-4 text-center">
+                            <p class="mb-3">Your browser doesn't support PDF preview. Please download the file to view it.</p>
+                        </div>
+                    </object>
+                </div>
+
+                <div class="text-center">
+                    <a href="Heuristic_Evaluation_Workbook_Compiled.pdf" class="btn btn-primary mb-2" download>
+                        <i class="bi bi-download me-2"></i>Download Full Workbook PDF
+                    </a>
+                    <p class="small text-muted mb-0">
+                        Contains complete evaluation guidelines, and templates based on Nielsen's 10 usability heuristics.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>

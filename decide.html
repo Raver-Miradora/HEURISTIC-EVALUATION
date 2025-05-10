@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HCI2-FinalTermProject</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+<body>
+     <!--Navigation Bar-->
+     <nav class="navbar navbar-expand-lg bg-dark" id="mainNav" data-bs-theme="dark"> 
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Heuristic Evaluation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="decide.html">DECIDE Framework</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="evaluationResult.html">Evaluation Result</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="proposedImprovements.html">Proposed Improvements</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h4 class="my-0 fw-normal"><strong>D – Determine the Goals</strong></h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+                This evaluation aims to identify usability issues impacting operational efficiency, inventory accuracy, and user satisfaction within the Computer Laboratory Management System. 
+                We will assess how effectively staff can perform core tasks like equipment borrowing, inventory tracking, and damage reporting. The analysis will also evaluate user trust in system data, 
+                particularly for sensitive functions involving item availability and borrower records.
+            </p>
+          </div>
+        </div>
+      
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h4 class="my-0 fw-normal"><strong>E – Explore the Questions</strong></h4>
+          </div>
+          <div class="card-body">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item border-0">
+                <strong>Visibility of System Status</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design clearly communicate its state?</li>
+                  <li>Is feedback presented quickly after user actions?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Match Between System and the Real World</strong><br>
+                <ul class="mt-2">
+                  <li>Will users be familiar with the terminology?</li>
+                  <li>Do the design's controls follow real-world conventions?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>User Control and Freedom</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design allow users to go back a step in the process?</li>
+                  <li>Are exit links easily discoverable?</li>
+                  <li>Can users easily cancel an action?</li>
+                  <li>Is Undo and Redo supported?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Consistency and Standards</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design follow industry conventions?</li>
+                  <li>Are visual treatments used consistently throughout the design?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Error Prevention</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design prevent slips by using helpful constraints?</li>
+                  <li>Does the design warn users before they perform risky actions</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Recognition Rather Than Recall</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design keep important information visible, so that users do not have to memorize it?</li>
+                  <li>Does the design offer help in-context?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Flexibility and Efficiency of Use</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design provide accelerators like keyboard shortcuts and touch gestures?</li>
+                  <li>Is content and functionality personalized or customized for individual users?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Aesthetic and Minimalist Design</strong><br>
+                <ul class="mt-2">
+                  <li>Is the visual design and content focused on the essentials?</li>
+                  <li>Have all distracting, unnecessary elements been removed?</li>
+                </ul>
+              </li>
+              
+              <li class="list-group-item border-0">
+                <strong>Help Users Recognize, Diagnose, and Recover from Errors</strong><br>
+                <ul class="mt-2">
+                  <li>Does the design use traditional error message visuals, like bold, red text?</li>
+                  <li>Does the design offer a solution that solves the error immediately?</li>
+                </ul>
+              </li>
+
+              <li class="list-group-item border-0">
+                <strong>Help and Documentation</strong><br>
+                <ul class="mt-2">
+                  <li>Is help documentation easy to search?</li>
+                  <li>Is help provided in context right at the moment when the user requires it?</li>
+                </ul>
+              </li>
+
+            </ol>
+          </div>
+            </ol>
+          </div>
+
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 fw-normal"><strong>C - Choose the evaluation approach and methods.</strong></h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                For our evaluation approach, we employed <b>heuristic evaluation</b> using <b><em>Jakob Nielsen’s 10 usability principles</em></b> to systematically assess the Computer Laboratory Management System’s interface and functionality. 
+                Each team member conducted the evaluation individually to independently identify usability issues, ensuring unbiased and diverse perspectives. This method allowed us to scrutinize the system’s compliance with key usability heuristics. 
+                After completing individual assessments, we consolidated findings to prioritize issues. </p>
+            </div>
+          </div>
+          
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 fw-normal"><strong>I: Identify the practical issues.</strong></h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <b>Heuristic Evaluation Team Composition/Participants</b><br><br>
+                The evaluation was conducted by a team of IT undergraduates from Partido State University, serving as trained heuristic evaluators. The team was structured with the following roles:
+              </p>
+              <div class="ms-4"> 
+                <ol class="mb-0"> 
+                  <li><strong>Lead Evaluator</strong> - Coordinated the evaluation process and consolidated findings from all team members</li>
+                  <li><strong>Heuristic Specialists (5 members)</strong> - Each focused on evaluating specific Nielsen heuristics to ensure comprehensive coverage</li>
+                  <li><strong>Documentation Specialist</strong> - Recorded all identified usability issues with screenshots and detailed descriptions</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white">
+              <h4 class="my-0 fw-normal"><strong>D - Decide on the Ethical Issues</strong></h4>
+            </div>
+            <div class="card-body">
+              <p>For our heuristic evaluation of the Computer Laboratory Management System, we established the following ethical guidelines:</p>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item border-0">
+                  <strong>Confidentiality Agreement</strong><br>
+                  <ul class="mt-2">
+                    <li>All system screenshots and findings were anonymized to protect sensitive data</li>
+                  </ul>
+                </li>
+  
+                <li class="list-group-item border-0">
+                  <strong>Evaluation Integrity</strong><br>
+                  <ul class="mt-2">
+                    <li>Findings were documented objectively without fabrication or exaggeration</li>
+                    <li>All identified issues were verified by at least two team members before reporting</li>
+                  </ul>
+                </li>
+  
+                <li class="list-group-item border-0">
+                  <strong>Professional Conduct</strong><br>
+                  <ul class="mt-2">
+                    <li>Testing used dummy data rather than real user information</li>
+                  </ul>
+                </li>
+  
+                <li class="list-group-item border-0">
+                  <strong>Attribution</strong><br>
+                  <ul class="mt-2">
+                    <li>Proper credit was given to Jakob Nielsen's framework</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+              </ol>
+            </div>
+            
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                  <h4 class="my-0 fw-normal"><strong>E - Evaluation, Analyze, Interpret and Present the data</strong></h4>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    For our evaluation process, we utilized the <b><em>Nielsen Norman Group Heuristic Evaluation Workbook</em></b> as our primary assessment tool. This comprehensive workbook provided structured fillable forms and detailed guiding questions aligned with Jakob Nielsen's 10 usability principles. Each evaluator systematically examined the Computer Laboratory Management System using these standardized templates, which helped maintain consistency across all assessments. The workbook's framework enabled us to methodically document observed issues, their corresponding heuristic violations and improvement recommendations. </p>
+                </div>
+              </div>
+
+      </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>

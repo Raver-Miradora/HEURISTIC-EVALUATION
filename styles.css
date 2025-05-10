@@ -1,0 +1,22 @@
+.hover-scale {
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.hover-scale:hover {
+    transform: scale(1.1); /* Enlarge the image */
+}
+
+/* Responsive PDF container */
+    @media (min-width: 768px) {
+        .pdf-container {
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for larger screens */
+            min-height: 500px;
+        }
+    }
+    
+    /* Mobile-specific adjustments */
+    @media (max-width: 767px) {
+        .pdf-container {
+            padding-bottom: 140%; /* Taller aspect ratio for mobile */
+        }
+    }
